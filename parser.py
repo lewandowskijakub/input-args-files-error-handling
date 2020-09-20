@@ -3,7 +3,7 @@ import os
 os.system("cls || clear")
 
 def get_filename():
-    if len(sys.argv) >= 3:
+    if len(sys.argv) >= 2:
         input1 = int(sys.argv[1])
         input2 = int(sys.argv[2])
         return input1 + input2
