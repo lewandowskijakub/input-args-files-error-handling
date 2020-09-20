@@ -1,23 +1,27 @@
 import sys
-import os
-os.system("cls || clear")
+
 
 def get_filename():
-    if len(sys.argv) >= 3:
-        input1 = int(sys.argv[1])
-        input2 = int(sys.argv[2])
-        return input1 + input2
+    if len(sys.argv) >= 2:
+        filename = sys.argv[1]
+        return filename
     else:
-        print("You should run this program by calling: python parser.py input1 input2")
+        print("[ WARNING ] You should run this program by calling: python parser.py filename")
         return ""
+
+def read from_file_to_list(filename):
+    with open("input.txt","r")
 
 
 def main():
     filename = get_filename()
-    if filename == "":
+
+    if len(filename) == 0:
         return
     
-    print(f"File to add: {filename}")
+    print(f"File to parse: {filename}")
+    
+
 
 if __name__ == "__main__":
     main()
