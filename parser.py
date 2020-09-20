@@ -1,4 +1,7 @@
 import sys
+import os
+
+os.system("cls || clear")
 
 NAME_INDEX = 0
 
@@ -59,6 +62,7 @@ def main():
         return
     
     print(f"File to parse: {filename}")
+    print(f"This will be saved in: {madefile}")
     data_list = read_from_file_to_list(filename)
     report = generate_report(filename, data_list, madefile)
     save_report_to_file(report, madefile)
